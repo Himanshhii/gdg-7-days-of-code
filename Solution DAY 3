@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    // Input: Start and End of Range
+    int a, b;
+    cout << "Enter the start of the range: ";
+    cin >> a;
+    cout << "Enter the end of the range: ";
+    cin >> b;
+
+    // Loop through the range
+    for (int i = a; i <= b; i++) {
+        if (i % 5 == 0 && i % 7 == 0) {
+            cout << "FooBar" << endl; // Multiple of 5 and 7
+        } else if (i % 5 == 0) {
+            cout << "Foo" << endl; // Multiple of 5 only
+        } else if (i % 7 == 0) {
+            cout << "Bar" << endl; // Multiple of 7 only
+        } else {
+            cout << "Baz" << endl; // Neither
+        }
+    }
+
+    return 0;
+}
