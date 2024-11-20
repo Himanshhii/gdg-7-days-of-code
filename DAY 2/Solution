@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int levels;
+    cout << "Enter the number of levels for the pyramid: ";
+    cin >> levels;
+
+    for (int i = 1; i <= levels; i++) {
+        // Print spaces
+        for (int space = 0; space < levels - i; space++) {
+            cout << " ";
+        }
+
+        // Print stars
+        for (int star = 0; star < (2 * i - 1); star++) {
+            cout << "*";
+        }
+
+        // Move to the next line
+        cout << endl;
+    }
+
+    return 0;
+}
