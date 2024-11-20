@@ -1,0 +1,14 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    string word;
+    cout << "Enter a word: ";
+    cin >> word;
+
+    // Print the word twice with a space in between
+    cout << word << " " << word << endl;
+
+    return 0;
+}
