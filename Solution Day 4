@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int X, Y, Z; // 
+
+    // Read input values
+    cin >> X >> Y >> Z;
+
+    // Calculate total students
+    int total_students = X * Y;
+
+    // Check if passed students are more than 50% of total students
+    if (Z > total_students / 2) {
+        cout << "YES" << endl; // If more than half passed
+    } else {
+        cout << "NO" << endl; // If half passed
+    }
+
+    return 0;
+}
